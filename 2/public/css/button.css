@@ -1,0 +1,49 @@
+button,
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background: #d351ac;
+  border: 1px solid #c7339b;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: 0.3s ease-in;
+}
+
+button,
+button span,
+button p,
+.button,
+.button span,
+.button p {
+  color: #fff;
+  font-weight: 500;
+}
+
+button:hover,
+.button:hover {
+  background: #bd1c8c;
+  border: 1px solid #bd1c8c;
+
+}
+
+.danger {
+  background: #d351ac;
+  border: 1px solid #c7339b;
+}
+
+.danger:hover {
+  background: #bd1c8c;
+  border: 1px solid #bd1c8c;
+}
+
+.outline {
+  background: none;
+}
+button img{
+  width: 18px;
+  height: 20px;
+
+}
