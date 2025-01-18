@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+        <div class="header-wrapper conteiner">
+
+            <div class="header-logo">
+                Mango
+            </div>
+            
+            <div class="header-burger" id="burger">
+                 <i class="fa-solid fa-bars" style="color: #010101;"></i>
+            </div>
+        </div>
+        
+
+    </header>
+    <nav class="nav" id="nav">
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <script src="./js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const burger = document.getElementById('burger');
+            const nav = document.getElementById('nav');
+
+            burger.addEventListener('click', function() {
+                nav.classList.toggle('active'); // Переключаем класс 'active' у меню
+            });
+        });
+    </script>
+
+    <main>
+        <section id="banner">
+            <div  class="banner-wrapper">
+                <div class="banner-photo">
+                    <img src="./img/1.jpg" alt="banner">
+                </div>
+                <div class="banner-title container">
+                    <h1>Mango</h1>
+                </div>
+            </div>
+        </section>
+
+        <section id="populars"> 
+ 
+            <div class="populars-wrapper container"> 
+                <div class="populars-title">
+                    <h2>Товары</h2>
+                </div>
+ 
+                <div class="populars"> 
+ 
+                    <div class="popular"> 
+ 
+                        <div class="popular-photo"> 
+ 
+                            <img src="./img/i.webp" alt="popular"> 
+ 
+                        </div> 
+ 
+                        <div class="popular-btn"> 
+ 
+                            <h2>Диван</h2>
+                                <p>20 000р.</p> 
+                                <div class="popular-button">
+                                <button>В корзину</button>
+                                </div>
+                        </div> 
+ 
+                    </div> 
+  
+                    <div class="popular"> 
+ 
+                        <div class="popular-photo"> 
+ 
+                            <img src="./img/i (1).webp" alt="popular"> 
+ 
+                        </div> 
+ 
+                        <div class="popular-btn"> 
+ 
+                            <h2>Диван №2</h2>
+                              <p>30 000р.</p>  
+                              <div class="popular-button">
+                                    <button>В корзину</button>
+                                </div>
+                        </div> 
+ 
+                    </div> 
+                    <div class="popular"> 
+ 
+                        <div class="popular-photo"> 
+ 
+                            <img src="./img/12-1500x900.jpg" alt="popular"> 
+ 
+                        </div> 
+ 
+                        <div class="popular-btn"> 
+ 
+                            <h2>Гостинная</h2> 
+                               <p>70 000р.</p> 
+                               <div class="popular-button">
+                                    <button>В корзину</button>
+                                </div>
+                        </div> 
+ 
+                    </div> 
+                    <div class="popular"> 
+ 
+                        <div class="popular-photo"> 
+ 
+                            <img src="./img/gostinaia-marseli-iaseni-snejnyi-59042-1.jpg" alt="popular"> 
+ 
+                        </div> 
+ 
+                        <div class="popular-btn"> 
+ 
+                            <h2>Гостинная №2</h2>
+                               <p>70 000р.</p>
+                               <div class="popular-button"> 
+                                    <button>В корзину</button>
+                                </div>
+                        </div> 
+ 
+                    </div> 
+                </div>
+            </div> 
+        </section> 
+
+        <section id="categories">
+            <div class="categories-wrapper container">
+                <div class="categories-text">
+                   <p>О нас</p> 
+                </div>
+                
+                <P>Магазин мебели Mango предлагает широкий ассортимент стильной и качественной мебели для вашего дома. В нашем каталоге вы найдете решения для гостиных, спален, кухонь и офисов, сочетающие функциональность и современный дизайн. Мы сотрудничаем с ведущими производителями, обеспечивая долговечность и эстетическую привлекательность каждой детали.
+
+Мы предоставляем услуги по оформлению заказов, быстрой доставке и сборке мебели. Наша команда готова помочь вам с выбором и дать ценные рекомендации по оформлению интерьера. Посетите Mango и создайте уникальное пространство, которое отражает ваш стиль и индивидуальность!</P>
+            <div class="category-photo">
+                <img src="./img/f54875cc952923f7014b99ed57703037.jpeg">
+            </div>
+</div>
+
+
+        </section>
+        <section id="otzivy">
+            <div class="otzivy">
+            <div class="otziv-title">
+                Ответы на вопросы
+            </div>
+                    <h2>Часто задаваемые вопросы</h2>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-button">Как оформить заказ?</button>
+                        <div class="accordion-content">
+                            <p>Для оформления заказа выберите товар, нажмите на кнопку "Купить", и следуйте инструкциям на экране.</p>
+                        </div>
+                    </div>
+            
+                    <div class="accordion-item">
+                        <button class="accordion-button">Какая гарантия на мебель?</button>
+                        <div class="accordion-content">
+                            <p>На всю новую мебель предоставляется гарантия 12 месяцев. Дополнительная информация находится в документации к товару.</p>
+                        </div>
+                    </div>
+            
+                    <div class="accordion-item">
+                        <button class="accordion-button">Как осуществляется доставка?</button>
+                        <div class="accordion-content">
+                            <p>Доставка осуществляется курьером на указанный адрес в течение 3-5 рабочих дней после подтверждения заказа.</p>
+                        </div>
+                    </div>
+            
+                    <div class="accordion-item">
+                        <button class="accordion-button">Как вернуть товар?</button>
+                        <div class="accordion-content">
+                            <p>Вы можете вернуть товар в течение 14 дней с момента получения, при условии, что он не был в использовании и сохранены упаковка и документы.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                
+        </section>
+        
+        <footer> 
+            <section id="footer"> 
+            <div class="footer"> 
+                <div class="footer-wrapper">
+                    <div class="footer-logo">
+                       <img src="./img/mango.png">
+                    </div>
+                        <div class="footer-nav">
+                            <div class="footer-title">
+                                <h2>меню</h2>
+                            </div>
+                            <nav class="footer-nav">                     
+                                <a href="#">Главная</a> 
+                                <a href="#">Каталог</a> 
+                                <a href="#">Вакансии</a> 
+                                <a href="#">Доставка</a> 
+                            </nav>
+                        </div>
+                        <div class="footer-contact"> 
+                            <div class="footer-title"> 
+                                <h2>Контакты</h2> 
+                            </div> 
+                            <p> 
+                                Остались вопросы? Напишите нам</br>
+                                <b>https://t.me/mango</b></br>
+                                 <b>@mango</b></br>
+                                 <b>mango@gmail.com </b>
+                             </p> 
+                             <p> 
+                                Нужна консультация? Позвоните нам 
+                                <br>
+                                <button id="phone-button" style="background: none; border: none; color: blue; cursor: pointer;">
+                                    <i class="fa-solid fa-phone"></i>
+                                </button>
+                                <span><b>+7 988 555 43 53</b></span> 
+                             </p>
+                        </div>    
+    
+                </div>
+            </div> 
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Позвоните нам</h2>
+                    <p>Номер телефона: <b>+7 988 555 43 53</b></p>
+                    <a href="tel:+79885554353" class="call-button">Позвонить</a>
+                </div>
+            </div>
+            </section> 
+             
+        </footer> 
+
+
+
+
+
+    </main>
+</body>
+</html>
